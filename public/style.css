@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: blue;
     margin-bottom: 1.5rem;
 }
 
@@ -32,7 +32,7 @@ h1 {
     color: #555;
 }
 
-button {
+buttons {
     background-color: #3050cc;
     color: white;
     border: none;
@@ -40,7 +40,18 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 16px;
+}
+
+    .buttons {
+width: 960px;
+margin: 0 auto;
+}
+
+    .action_btn {
+width: 500px;
+margin: 0 auto;
 }
 
 button:hover {
@@ -53,3 +64,4 @@ button:hover {
     color: #3050cc;
     min-height: 1.5rem;
 }
+
