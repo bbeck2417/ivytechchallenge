@@ -49,27 +49,7 @@ h1 {
     margin-top: 20px;
 }
 
-buttons {
-    background-color: #3050cc;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 16px;
-}
 
-    .buttons {
-width: 960px;
-margin: 0 auto;
-}
-
-    .action_btn {
-width: 500px;
-margin: 0 auto;
-}
 
 button:hover {
     background-color: #203388;
@@ -80,14 +60,18 @@ button:disabled {
     cursor: not-allowed;
 }
 
-#punchline-button {
-    background-color: #28a745;
+button {
+    background-color: #3050cc;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
-#punchline-button:hover {
-    background-color: #218838;
-}
-
-#punchline-button:disabled {
+button:disabled {
     background-color: #cccccc;
+    cursor: not-allowed;
 }
