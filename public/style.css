@@ -1,8 +1,26 @@
+/* CSS Styles */
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: maroon;
+}
+
 .container {
-    max-width: 600px;
-    margin: 50px auto;
     text-align: center;
-    font-family: Arial, sans-serif;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 1.5rem;
 }
 
 #joke-display {
@@ -11,18 +29,27 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     min-height: 60px;
+    color: #555;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #3050cc;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #203388;
+}
+
+#message {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #3050cc;
+    min-height: 1.5rem;
 }
