@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Joke Generator</h1>
+        <div id="joke-display">Click the button to see a joke!</div>
+        <button onclick="getJoke()">Get Random Joke</button>
+    </div>
+
+    <script>
+        function getJoke() {
+            fetch('/api/joke')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('joke-display').textContent = data.joke;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('joke-display').textContent = 'Failed to load joke';
+                });
+        }
+    </script>
+</body>
+</html>
