@@ -13,15 +13,17 @@ app.get('/', (req, res) => {
 
 app.get('/api/joke', (req, res) => {
     try {
-        const jokes = fs.readFileSync(path.join(__dirname, 'data', 'jokes.txt'), 'utf8')
-            .split('\n')
-            .filter(joke => joke.trim()) // Remove any empty lines
-            .map(joke => {
-                const [setup, punchline] = joke.split('|');
-                return { setup, punchline };
-            });
+        const raw = fs.readFileSync(path.join(__dirname, 'data', 'jokes.json'), 'utf8');
+        const jokes = JSON.parse(raw);
+        if (!Array.isArray(jokes) || jokes.length === 0) {
+            return res.status(500).json({ error: 'No jokes available' });
+        }
         const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
-        res.json(randomJoke);
+        // Ensure returned object has setup and punchline
+        res.json({
+            setup: randomJoke.setup || '',
+            punchline: randomJoke.punchline || ''
+        });
     } catch (error) {
         console.error('Error serving joke:', error);
         res.status(500).json({ error: 'Failed to get joke' });

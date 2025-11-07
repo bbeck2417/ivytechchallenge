@@ -1,7 +1,22 @@
 [
-  "Why don't programmers like nature? It has too many bugs.",
-  "What do you call a bear with no teeth? A gummy bear!",
-  "Why don't eggs tell jokes? They'd crack up!",
-  "What do you call a fake noodle? An impasta!",
-  "Why did the scarecrow win an award? He was outstanding in his field!"
+  {
+    "setup": "Why don't programmers like nature?",
+    "punchline": "It has too many bugs."
+  },
+  {
+    "setup": "What do you call a bear with no teeth?",
+    "punchline": "A gummy bear!"
+  },
+  {
+    "setup": "Why don't eggs tell jokes?",
+    "punchline": "They'd crack up!"
+  },
+  {
+    "setup": "What do you call a fake noodle?",
+    "punchline": "An impasta!"
+  },
+  {
+    "setup": "Why did the scarecrow win an award?",
+    "punchline": "He was outstanding in his field!"
+  }
 ]
