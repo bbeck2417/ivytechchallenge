@@ -54,7 +54,7 @@ width: 500px;
 margin: 0 auto;
 }
 
-button:hover {
+button: hover {
     background-color: #203388;
 }
 
@@ -64,4 +64,3 @@ button:hover {
     color: #3050cc;
     min-height: 1.5rem;
 }
-
